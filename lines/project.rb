@@ -14,7 +14,7 @@ $options = {
 	:output => "x.svg",
 }
 OptionParser.new do |opts|
-	opts.banner = "Usage: #{$0} [options] NP4Row10feature.csv ..."
+	opts.banner = "Usage: #{$0} [options] input-image"
 
 	opts.on("-o", "--output=FILE", "output to FILE") do |file|
 		$options[:output] = file
