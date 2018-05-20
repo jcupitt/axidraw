@@ -42,7 +42,7 @@ def err(msg)
 end
 
 # number of segments ...  12 is a clock face, for example
-ANGLES = 120
+ANGLES = 60
 
 log "loading #{ARGV[0]} ..." 
 image = Vips::Image.new_from_file ARGV[0]
@@ -63,7 +63,7 @@ image = mask.ifthenelse image, 0
 vectors = []
 (0 ... ANGLES / 2).each do |i|
     angle = -i * 360 / ANGLES
-    columns, rows = image.rotate(angle).project()
+    columns, rows = image.similarity(angle: angle).project()
     vectors << rows
 end
 
@@ -76,7 +76,7 @@ end
 
 bg = Vips::Image.black length, length 
 vectors.each_with_index do |image, i|
-    strips = image.zoom(image.height, 1).rotate(i * 360 / ANGLES)
+    strips = image.zoom(image.height, 1).similarity(angle: i * 360 / ANGLES)
     bg += strips.gravity('centre', length, length)
 end
 
@@ -98,7 +98,9 @@ File.open $options[:output], "w" do |s|
                         ln = j - array.length / 2
                         y = ln * 400 / (array.length / 2)
 
-                        svg.line(-400, y, 400, y) if 4 * rand < prob
+                        if 4 * rand < prob ** 2
+                            svg.line(-400, y, 400, y) 
+                        end
                     end
                 end
             end
