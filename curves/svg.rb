@@ -61,7 +61,7 @@ class Svg
     # axidraw can't really fill, can only change pens between layers, and
     # can't change line width
     options = options.merge d: d, 
-      fill: "transparent", stroke: "black", "stroke-width": 0.1
+      fill: "none", stroke: "black", "stroke-width": 0.1
     element "path", options, block
   end
 
