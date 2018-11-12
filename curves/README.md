@@ -1,7 +1,7 @@
 # Notes
 
-This needs the axicli program to plot the curves, since it relies on the
-better clipping supported there.
+This needs the `axicli` program since it relies on the better clipping
+supported there.
 
 ## Installation notes for 2.2.0 on macOS Mojave
 
@@ -18,14 +18,14 @@ curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
 python get-pip.py --user
 ```
 
-That will install `pip` to `/Users/john/Library/Python/2.7/bin`, so you'll need
+That will install `pip` to `$HOME/Library/Python/2.7/bin`, so you'll need
 to add that to your `PATH`:
 
 ```bash
 export PATH=$HOME/Library/Python/2.7/bin:$PATH
 ```
 
-As per the axicli notes, you need lxml:
+As per the `axicli` notes, you need lxml:
 
 ```bash
 pip install lxml --user
