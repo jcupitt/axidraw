@@ -44,6 +44,20 @@ Adjusting `INKSCAPEHOME` appropriately.
 
 ## Drawing the plot
 
+Add this to your `.bash__profile`:
+
+```bash
+alias axicli="python ~/packages/axidraw/axidraw-api-v2_2_0/axicli.py --model 2"
 ```
-python ~/packages/axidraw/axidraw-api-v2_2_0/axicli.py curves.svg
+
+Then to disable motors and raise pen:
+
+```
+axicli curves.svg --mode align
+```
+
+To plot layer 1:
+
+```
+axicli curves.svg --mode layers --layer 1
 ```
