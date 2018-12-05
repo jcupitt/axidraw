@@ -42,5 +42,5 @@ axicli curves.svg --mode align
 To plot layer 1:
 
 ```
-axicli curves.svg --mode layers --layer 1
+axicli curves.svg --pen_pos_down 0 --pen_pos_up 90 --mode layers --layer 1
 ```
