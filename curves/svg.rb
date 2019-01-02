@@ -35,8 +35,8 @@ class Svg
     # width and height default to the full plot range of an axidraw A3
     options = options.merge xmlns: "http://www.w3.org/2000/svg",
       "xmlns:inkscape" => "http://www.inkscape.org/namespaces/inkscape",
-      width: "420mm",
-      height: "295mm"
+      width: "430mm",
+      height: "297mm"
     element "svg", options, block
   end
 
