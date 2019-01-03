@@ -12,7 +12,7 @@ end
 layer_names = %w[red green blue yellow black purple orange violet polkadot cyan cerise]
 
 # the x range we make lines over ... we have to go over 1024 and under 0 to
-# paint the edges
+# make sure we paint the edges
 from = -100
 to = 1100
 
@@ -25,37 +25,21 @@ $name_of_number = {}
   $name_of_number[x] = layer_names[(fuzz_x * layer_names.length).to_i]
 end
 
-def draw_line(svg, name, x)
-  if name == $name_of_number[x]
-    skew = x / 1024.0 - 0.5
-    svg.path "M #{x},0" +
-      "c #{-300 * skew},180 0,300 #{40 * skew},354" +
-      "s #{-100 * skew},180 0,354" 
-  end
-end
-
-puts "writing curves-even.svg ..."
-File.open "curves-even.svg", "w" do |file|
+puts "writing curves.svg ..."
+File.open "curves.svg", "w" do |file|
   Svg.new file, viewBox: "0 0 1024 707" do |svg|
     layer_names.each do |name|
       svg.layer name do 
-        (from .. to).step(2).each do |x|
-          draw_line svg, name, x
+        (from .. to).each do |x|
+          if name == $name_of_number[x]
+            skew = x / 1024.0 - 0.5
+            svg.path "M #{x},0" +
+              "c #{-300 * skew},180 0,300 #{40 * skew},354" +
+              "s #{-100 * skew},180 0,354" 
+          end
         end
       end
     end
   end
 end
 
-puts "writing curves-odd.svg ..."
-File.open "curves-odd.svg", "w" do |file|
-  Svg.new file, viewBox: "0 0 1024 707" do |svg|
-    layer_names.each do |name|
-      svg.layer name do 
-        (from + 1 .. to).step(2).each do |x|
-          draw_line svg, name, x
-        end
-      end
-    end
-  end
-end

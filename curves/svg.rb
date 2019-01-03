@@ -32,11 +32,12 @@ class Svg
     @layer = 1
     @indent = 0
     @output = output
-    # width and height default to the full plot range of an axidraw A3
+    # the full plot range of an axidraw A3 is 430 by 297mm ... knock 2mm off to
+    # allow a 1mm margin
     options = options.merge xmlns: "http://www.w3.org/2000/svg",
       "xmlns:inkscape" => "http://www.inkscape.org/namespaces/inkscape",
-      width: "430mm",
-      height: "297mm"
+      width: "428mm",
+      height: "295mm"
     element "svg", options, block
   end
 
