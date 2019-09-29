@@ -2,8 +2,8 @@
 
 require_relative 'svg'
 
-def midpoint((x1, y1), (x2, y2))
-  [(x1 + x2) / 2, (y1 + y2) / 2]
+def midpoint(*points)
+  points.transpose.map{|x| x.sum.to_f / points.length}
 end
 
 def sierpinski(svg, level, a, b, c)

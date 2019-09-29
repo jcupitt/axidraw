@@ -58,6 +58,11 @@ class Svg
     element "line", options, block
   end
 
+  def circle((cx, cy), r, options={}, &block)
+    options = options.merge cx: cx, cy: cy, r: r
+    element "circle", options, block
+  end
+
   def polygon points, options={}, &block
     point_str = points.each {|p| "#{p[0]},#{p[1]}"}.join " "
     options = options.merge points: point_str
