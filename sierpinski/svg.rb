@@ -6,7 +6,63 @@
 #     svg.line [0, 0], [400, 400], style: "stroke: black; stroke-width: 1" 
 # end
 
+def midpoint(*points)
+  points.transpose.map{|x| x.sum.to_f / points.length}
+end
+
+def length(v)
+  Math.sqrt(v.map{|x| x ** 2}.sum)
+end
+
+def sub(a, b)
+  a.zip(b).map{|(x, y)| x - y}
+end
+
+def add(a, b)
+  a.zip(b).map{|(x, y)| x + y}
+end
+
 class Svg
+
+  # make a SVG A element for a section of an arc
+  def arc_path(c, r, sa, sweep)
+    sx, sy = add([r * Math.cos(sa), r * Math.sin(sa)], c)
+    ex, ey = add([r * Math.cos(sa + sweep), r * Math.sin(sa + sweep)], c)
+    fa = sweep > Math::PI ? 1 : 0
+    fs = sweep > 0 ? 1 : 0
+
+    "M #{sx} #{sy} A #{r} #{r} 0 #{fa} #{fs} #{ex} #{ey}"
+  end
+
+  # a spiral moving in as a set of arcs
+  def spiral_path(c, r, sa, t)
+    sx, sy = add([r * Math.cos(sa), r * Math.sin(sa)], c)
+    d = "M #{sx} #{sy} "
+
+    (0 .. t).step(0.25).each do |i|
+      ar = r - i
+      aa = sa + i * 4 * Math::PI
+      ex, ey = add([ar * Math.cos(aa), ar * Math.sin(aa)], c)
+      d += "A #{ar} #{ar} 0 0 1 #{ex} #{ey} "
+    end
+
+    d
+  end
+
+  # draw a circle using an overlapping path with a random start and end angle ..
+  # this helps to hide the pen up and pen down points
+  def circle_path(c, r)
+    sa = 0.5 * Random.rand * Math::PI
+    sweep = 1.1 * Math::PI
+    "#{arc_path(c, r, sa, sweep)} #{arc_path(c, r, sa + sweep, sweep)}"
+  end
+
+  # draw a thick circle as outer, inward spiral, inner
+  def circle_thick_path(c, r, t)
+    sa = 0.5 * Random.rand * Math::PI
+    "#{circle_path(c, r)} #{spiral_path(c, r, sa, t)} #{circle_path(c, r - t)}"
+  end
+
   def attrs options
     a = []
     options.each do |name, value|
@@ -58,9 +114,22 @@ class Svg
     element "line", options, block
   end
 
-  def circle((cx, cy), r, options={}, &block)
-    options = options.merge cx: cx, cy: cy, r: r
-    element "circle", options, block
+  def circle(c, r, options={}, &block)
+    # don't use SVG circle -- that will leave marks for penup and pendown
+    d = circle_path(c, r)
+    options = options.merge d: d
+    element "path", options, block
+  end
+
+  def circle_thick(c, r, t, options={}, &block)
+    t = [r, t].min
+    if t == 0
+      d = circle_path(c, r)
+    else
+      d = circle_thick_path(c, r, t)
+    end
+    options = options.merge d: d
+    element "path", options, block
   end
 
   def polygon points, options={}, &block
@@ -70,10 +139,7 @@ class Svg
   end
 
   def path d, options={}, &block
-    # axidraw can't really fill, can only change pens between layers, and
-    # can't change line width
-    options = options.merge d: d, 
-      fill: "none", stroke: "black", "stroke-width": 0.1
+    options = options.merge d: d 
     element "path", options, block
   end
 
