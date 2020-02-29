@@ -49,6 +49,40 @@ class Svg
     d
   end
 
+  # draw a disc by spiraling out slightly to hide pendown, then spiraling in to
+  # the centre
+  def draw_disc(c, r)
+    sx, sy = c
+    a = 0
+    d = "M #{sx} #{sy} "
+
+    # spiral out from the centre 
+    (0.25 .. r - 0.125).step(0.25).each do |i|
+      ar = i
+      a += Math::PI
+      ex, ey = add([ar * Math.cos(a), ar * Math.sin(a)], c)
+      d += "A #{ar} #{ar} 0 0 1 #{ex} #{ey} "
+    end
+
+    # draw a true circle exactly at r
+    a += Math::PI
+    ex, ey = add([r * Math.cos(a), r * Math.sin(a)], c)
+    d += "A #{r} #{r} 0 0 1 #{ex} #{ey} "
+    a += Math::PI
+    ex, ey = add([r * Math.cos(a), r * Math.sin(a)], c)
+    d += "A #{r} #{r} 0 0 1 #{ex} #{ey} "
+
+    # spiral in slightly to hide penup
+    (0 .. 0.75).step(0.25).each do |i|
+      ar = r - i
+      a += Math::PI
+      ex, ey = add([ar * Math.cos(a), ar * Math.sin(a)], c)
+      d += "A #{ar} #{ar} 0 0 1 #{ex} #{ey} "
+    end
+
+    d
+  end
+
   # draw a circle using an overlapping path with a random start and end angle ..
   # this helps to hide the pen up and pen down points
   def circle_path(c, r)
@@ -61,6 +95,12 @@ class Svg
   def circle_thick_path(c, r, t)
     sa = 0.5 * Random.rand * Math::PI
     "#{circle_path(c, r)} #{spiral_path(c, r, sa, t)} #{circle_path(c, r - t)}"
+  end
+
+  # draw a disc as outer circle plus inward spiral
+  def circle_disc(c, r)
+    sa = 0.5 * Random.rand * Math::PI
+    "#{circle_path(c, r)} #{spiral_path(c, r, sa, r - 0.25)}"
   end
 
   def attrs options
@@ -128,6 +168,12 @@ class Svg
     else
       d = circle_thick_path(c, r, t)
     end
+    options = options.merge d: d
+    element "path", options, block
+  end
+
+  def disc(c, r, options={}, &block)
+    d = draw_disc(c, r)
     options = options.merge d: d
     element "path", options, block
   end

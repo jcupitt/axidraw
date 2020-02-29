@@ -4,7 +4,7 @@ require 'prime'
 
 require_relative 'svg'
 
-$radius = 5
+$radius = 5.7
 $spacing = 6
 $layer_names = %w[red green blue yellow black purple orange violet magenta cyan teal]
 $n_layers = 60
@@ -72,7 +72,7 @@ end
 
 def snowflake svg, layer_name, centre
   if layer_name == $layer_names[$colour_table[0][0]]
-    svg.circle centre, $radius, 
+    svg.disc centre, $radius, 
       style: "fill: none; stroke: #{layer_name}; stroke-width: 0.7"
   end
   (0 ... 360).step(60).each do |angle|
@@ -87,7 +87,7 @@ def snowflake svg, layer_name, centre
       (0 ... layer).each do |j|
         index = (layer / 2.0 - j).abs.to_i 
         if layer_name == $layer_names[$colour_table[layer][index]]
-          svg.circle p, $radius, 
+          svg.disc p, $radius, 
             style: "fill: none; stroke: #{layer_name}; stroke-width: 0.7"
         end
         p = add(p, down)
