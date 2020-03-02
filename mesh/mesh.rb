@@ -88,7 +88,9 @@ class Mesh
     @triangles[tid] = nil
 
     edges.each do |eid|
-      raise "triangle not attached to edge" if ! @triangles_of_edge.include? tid
+      if ! @triangles_of_edge[eid].include? tid
+        raise "triangle not attached to edge"
+      end
       @triangles_of_edge[eid] -= [tid]
     end
   end
@@ -101,6 +103,43 @@ class Mesh
     @length[e1] ** 2 + @length[e2] ** 2 > @length[e3] ** 2
   end
 
+  # find the point that e1 and e2 share, or nil
+  def common_point(e1, e2)
+    p1, p2 = @edges[e1]
+    p3, p4 = @edges[e2]
+    if p1 == p3 || p1 == p4
+      p1
+    elsif p2 == p3 || p2 == p4
+      p2
+    else
+      nil
+    end
+  end
+
+  def sanity_check
+    @triangles.each do |tid, edges|
+      next if edges.nil?
+
+      e1, e2, e3 = edges
+      if common_point(e1, e2).nil? || 
+        common_point(e2, e3).nil? || 
+        common_point(e2, e1).nil? 
+        puts self
+        raise "triangle #{tid} is disconnected"
+      end
+    end
+
+    @triangles_of_edge.each do |eid, triangles|
+      triangles.each do |tid|
+        edges = @triangles[tid]
+        if ! edges.include?(eid)
+          puts self
+          raise "triangle #{tid} not in triangles_of_edge"
+        end
+      end
+    end
+  end
+
   # split a triangle into three based on a point at the centre
   def divide(tid)
     # stored shortest edge first
@@ -109,12 +148,13 @@ class Mesh
 
     # swap e2/e3 if necessary so that e1 and e3 share p1
     p3, p4 = @edges[e3]
-    if p3 != p1 && p4 != p2
+    if p3 != p1 && p4 != p1
       e2, e3 = e3, e2
+      p3, p4 = @edges[e3]
     end
 
-    # so the third point of the triangle is the one that's not p1 or p2
-    if p3 == p1 || p3 == p2
+    # so the third point of the triangle is the one that's not p1 
+    if p3 == p1 
       p3 = p4
     end
 
@@ -126,12 +166,14 @@ class Mesh
     remove_triangle(tid)
 
     e4 = add_edge(pc, p1)
-    e5 = add_edge(pc, p3)
-    e6 = add_edge(pc, p2)
+    e5 = add_edge(pc, p2)
+    e6 = add_edge(pc, p3)
 
-    add_triangle(e1, e4, e6)
-    add_triangle(e2, e4, e5)
-    add_triangle(e3, e6, e5)
+    add_triangle(e1, e4, e5)
+    add_triangle(e2, e5, e6)
+    add_triangle(e3, e4, e6)
+
+    sanity_check
   end
 
   # join a triangle to its neighbour along the longest edge, then bisect along
@@ -146,10 +188,6 @@ class Mesh
 
     t2 = tids.filter{|x| x != tid}.first
 
-    puts "joining #{tid} and #{t2}"
-    puts "before join, mesh is:"
-    puts self
-
     # we want the two edges that are not e3
     raise "edge not shared" if ! @triangles[t2].include?(e3)
     e4, e5 = @triangles[t2].filter{|x| x != e3}
@@ -158,38 +196,17 @@ class Mesh
     remove_triangle(t2)
 
     # swap e4/e5 if necessary so that e1 and e4 share a point
-    p1, p2 = @edges[e1]
-    p3, p4 = @edges[e2]
-    p5, p6 = @edges[e5]
-    if p5 == p1 || p5 == p2 || p6 == p1 || p6 == p2
+    if common_point(e1, e4).nil?
       e4, e5 = e5, e4
     end
 
     # e1 and e2 must share a point, and that point will be the adjacent
     # vertex
-    if p1 == p3
-      adjacent = p1
-    else
-      adjacent = p2
-    end
+    adjacent = common_point(e1, e2)
 
     # e4 and e5 must share a point, and that point will be the opposite
     # vertex
-    p1, p2 = @edges[e4]
-    p3, p4 = @edges[e5]
-    if p1 == p3
-      opposite = p1
-    else
-      opposite = p2
-    end
-
-    puts "e1 = #{e1}"
-    puts "e2 = #{e2}"
-    puts "e3 = #{e3}"
-    puts "e4 = #{e4}"
-    puts "e5 = #{e5}"
-    puts "opposite = #{opposite}"
-    puts "adjacent = #{adjacent}"
+    opposite = common_point(e4, e5)
 
     remove_edge(e3)
     e6 = add_edge(adjacent, opposite)
@@ -197,10 +214,7 @@ class Mesh
     add_triangle(e1, e4, e6)
     add_triangle(e2, e5, e6)
 
-    puts "after join, mesh is:"
-    puts self
-
-    exit
+    sanity_check
   end
 
   def iterate
@@ -248,7 +262,7 @@ e2 = mesh.add_edge(p2, p3)
 e3 = mesh.add_edge(p3, p1)
 t1 = mesh.add_triangle(e1, e2, e3)
 
-3.times do |i|
+8.times do |i|
   puts "generation #{i} ..."
   mesh.iterate
 end
