@@ -141,6 +141,10 @@ class Svg
     element "g", options, block
   end
 
+  def rect options={}, &block
+    element "rect", options, block
+  end
+
   def layer name, options={}, &block
     options = options.merge "inkscape:groupmode" => "layer",
         id: "layer#{@layer}",
