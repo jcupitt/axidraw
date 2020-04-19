@@ -59,28 +59,9 @@ class Svg
     element "line", options, block
   end
 
-  def circle(c, r, options={}, &block)
-    # don't use SVG circle -- that will leave marks for penup and pendown
-    d = circle_path(c, r)
-    options = options.merge d: d
-    element "path", options, block
-  end
-
-  def circle_thick(c, r, t, options={}, &block)
-    t = [r, t].min
-    if t == 0
-      d = circle_path(c, r)
-    else
-      d = circle_thick_path(c, r, t)
-    end
-    options = options.merge d: d
-    element "path", options, block
-  end
-
-  def disc(c, r, options={}, &block)
-    d = draw_disc(c, r)
-    options = options.merge d: d
-    element "path", options, block
+  def circle((cx, cy), r, options={}, &block)
+    options = options.merge cx: cx, cy: cy, r: r, fill: "none"
+    element "circle", options, block
   end
 
   def polygon points, options={}, &block

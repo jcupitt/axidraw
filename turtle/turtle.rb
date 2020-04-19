@@ -14,6 +14,7 @@ class Turtle
     @all_colours = {}
     @pen_down = false
     @lines = []
+    @circles = []
 
     yield self
 
@@ -25,6 +26,13 @@ class Turtle
             if line_colour == layer_colour
               svg.line [x1, y1], [x2, y2], 
                     style: "stroke: #{line_colour}; stroke-width: 0.7"
+            end
+          end
+
+          @circles.each do |circle_colour, cx, cy, radius|
+            if circle_colour == layer_colour
+              svg.circle [cx, cy], radius,
+                    style: "stroke: #{circle_colour}; stroke-width: 0.7"
             end
           end
         end
@@ -47,6 +55,24 @@ class Turtle
     @y = new_y
   end
 
+  def circle_left radius
+    if @pen_down
+      cx = @x + radius * Math.cos(rad(@angle - 90))
+      cy = @y + radius * Math.sin(rad(@angle - 90))
+      @circles << [@colour, cx, cy, radius]
+      @all_colours[@colour] = true
+    end
+  end
+
+  def circle_right radius
+    if @pen_down
+      cx = @x + radius * Math.cos(rad(@angle + 90))
+      cy = @y + radius * Math.sin(rad(@angle + 90))
+      @circles << [@colour, cx, cy, radius]
+      @all_colours[@colour] = true
+    end
+  end
+
   def left(angle)
     @angle += angle
   end
@@ -65,6 +91,22 @@ class Turtle
 
   def colour(colour)
     @colour = colour
+  end
+
+  def drawing
+    save_x = @x
+    save_y = @y
+    save_angle = @angle
+    save_colour = @colour
+    save_pendown = @pendown
+
+    yield self
+
+    @x = save_x
+    @y = save_y 
+    @angle = save_angle 
+    @colour = save_colour
+    @pendown = save_pendown 
   end
 
 end
