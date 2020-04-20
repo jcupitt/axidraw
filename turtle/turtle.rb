@@ -55,22 +55,21 @@ class Turtle
     @y = new_y
   end
 
-  def circle_left radius
+  def circle radius
     if @pen_down
       cx = @x + radius * Math.cos(rad(@angle - 90))
       cy = @y + radius * Math.sin(rad(@angle - 90))
-      @circles << [@colour, cx, cy, radius]
+      @circles << [@colour, cx, cy, radius.abs]
       @all_colours[@colour] = true
     end
   end
 
+  def circle_left radius
+    circle radius
+  end
+
   def circle_right radius
-    if @pen_down
-      cx = @x + radius * Math.cos(rad(@angle + 90))
-      cy = @y + radius * Math.sin(rad(@angle + 90))
-      @circles << [@colour, cx, cy, radius]
-      @all_colours[@colour] = true
-    end
+    circle -radius
   end
 
   def left(angle)
