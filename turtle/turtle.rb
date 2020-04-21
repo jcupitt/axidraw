@@ -97,7 +97,7 @@ class Turtle
     save_y = @y
     save_angle = @angle
     save_colour = @colour
-    save_pendown = @pendown
+    save_pen_down = @pen_down
 
     yield self
 
@@ -105,7 +105,7 @@ class Turtle
     @y = save_y 
     @angle = save_angle 
     @colour = save_colour
-    @pendown = save_pendown 
+    @pen_down = save_pen_down 
   end
 
 end

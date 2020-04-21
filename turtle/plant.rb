@@ -5,23 +5,32 @@ require_relative "turtle"
 def stem turtle, handedness, size, factor
   turtle.drawing do
     turtle.pen_down
-    i = 1
-    face = handedness
-    while size > 1 do
-      turtle.forward size
+    turtle.forward size * 0.5
 
+    i = 0
+    face = handedness
+
+    while size > 0.5 do
       turtle.left 5 * handedness
 
-      if i % 5 == 3
+      if i % 4 == 1
         turtle.drawing do
           turtle.right 60 * handedness
-          stem turtle, handedness, size, factor * 0.94
+          turtle.forward size * 0.6
+          stem turtle, handedness * -1, size, factor * 0.88
         end
+        turtle.left 10 * handedness
       else
-        turtle.circle size * 0.5 * face
+        turtle.drawing do
+          turtle.left 90 * face
+          turtle.forward size * 0.2
+          turtle.left 90 
+          turtle.circle size * 0.7
+        end
       end
 
       turtle.left 5 * handedness
+      turtle.forward size
 
       i += 1
       size *= factor
@@ -31,9 +40,24 @@ def stem turtle, handedness, size, factor
 end
 
 Turtle.new "drawing.svg" do |turtle|
-  turtle.right 45
+  turtle.right 37
+
+  centre_circle_radius = 33
+
+  turtle.drawing do
+    turtle.forward centre_circle_radius
+    turtle.left 270
+    turtle.pen_down
+    turtle.circle centre_circle_radius 
+  end
+
   2.times do
-    stem turtle, 1, 43, 0.95
+    turtle.drawing do
+      turtle.forward centre_circle_radius
+      turtle.pen_down
+      turtle.forward 10
+      stem turtle, 1, 46, 0.95
+    end
     turtle.left 180
   end
 end
