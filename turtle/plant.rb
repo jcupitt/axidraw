@@ -2,6 +2,8 @@
 
 require_relative "turtle"
 
+$colours = %w(green blue purple pink red yellow)
+
 def stem turtle, handedness, size, factor
   turtle.drawing do
     turtle.pen_down
@@ -25,7 +27,8 @@ def stem turtle, handedness, size, factor
           turtle.left 90 * face
           turtle.forward size * 0.2
           turtle.left 90 
-          turtle.circle size * 0.7
+          turtle.colour $colours.sample 
+          turtle.disc size * 0.7
         end
       end
 

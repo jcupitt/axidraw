@@ -6,7 +6,61 @@
 #     svg.line [0, 0], [400, 400], style: "stroke: black; stroke-width: 1" 
 # end
 
+def midpoint(*points)
+  points.transpose.map{|x| x.sum.to_f / points.length}
+end
+
+def length(v)
+  Math.sqrt(v.map{|x| x ** 2}.sum)
+end
+
+def sub(a, b)
+  a.zip(b).map{|(x, y)| x - y}
+end
+
+def add(a, b)
+  a.zip(b).map{|(x, y)| x + y}
+end
+
 class Svg
+
+  # a path for a solid disc of ink ... spiral out from the centre, then draw a
+  # circle, then spiral in slightly
+  def disc_path(c, r)
+    sx, sy = c
+    a = 0
+    d = "M #{sx} #{sy} "
+
+    # spiral out from the centre 
+    if r > 1
+      (0.25 .. r - 0.125).step(0.5).each do |i|
+        ar = i
+        a += Math::PI
+        ex, ey = add([ar * Math.cos(a), ar * Math.sin(a)], c)
+        d += "A #{ar} #{ar} 0 0 1 #{ex} #{ey} "
+      end
+    end
+
+    # draw a true circle exactly at r
+    a += Math::PI
+    ex, ey = add([r * Math.cos(a), r * Math.sin(a)], c)
+    d += "A #{r} #{r} 0 0 1 #{ex} #{ey} "
+    a += Math::PI
+    ex, ey = add([r * Math.cos(a), r * Math.sin(a)], c)
+    d += "A #{r} #{r} 0 0 1 #{ex} #{ey} "
+
+    # spiral in slightly to hide penup
+    if r > 2
+      (0 .. 2.5).step(0.5).each do |i|
+        ar = r - i
+        a += Math::PI
+        ex, ey = add([ar * Math.cos(a), ar * Math.sin(a)], c)
+        d += "A #{ar} #{ar} 0 0 1 #{ex} #{ey} "
+      end
+    end
+
+    d
+  end
 
   def attrs options
     a = []
@@ -62,6 +116,12 @@ class Svg
   def circle((cx, cy), r, options={}, &block)
     options = options.merge cx: cx, cy: cy, r: r, fill: "none"
     element "circle", options, block
+  end
+
+  def disc(c, r, options={}, &block)
+    d = disc_path(c, r)
+    options = options.merge d: d
+    element "path", options, block
   end
 
   def polygon points, options={}, &block

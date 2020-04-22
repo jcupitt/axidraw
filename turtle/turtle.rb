@@ -15,6 +15,7 @@ class Turtle
     @pen_down = false
     @lines = []
     @circles = []
+    @discs = []
 
     yield self
 
@@ -35,6 +36,14 @@ class Turtle
                     style: "stroke: #{circle_colour}; stroke-width: 0.7"
             end
           end
+
+          @discs.each do |disc_colour, cx, cy, radius|
+            if disc_colour == layer_colour
+              svg.disc [cx, cy], radius,
+                    style: "stroke: #{disc_colour}; stroke-width: 0.7"
+            end
+          end
+
         end
       end
     end
@@ -70,6 +79,23 @@ class Turtle
 
   def circle_right radius
     circle -radius
+  end
+
+  def disc radius
+    if @pen_down
+      cx = @x + radius * Math.cos(rad(@angle - 90))
+      cy = @y + radius * Math.sin(rad(@angle - 90))
+      @discs << [@colour, cx, cy, radius.abs]
+      @all_colours[@colour] = true
+    end
+  end
+
+  def disc_left radius
+    disc radius
+  end
+
+  def disc_right radius
+    disc -radius
   end
 
   def left(angle)
