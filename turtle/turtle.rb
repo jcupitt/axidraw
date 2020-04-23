@@ -2,6 +2,11 @@
 
 require_relative 'svg'
 
+# A simple turtle graphics class. This uses the SVG class to generate a drawing
+# which can be sent to an axidraw or viewed in a web browser.
+#
+# In atom, use an SVG preview plugin to watch the SVG while you edit!
+
 class Turtle
   def initialize filename
     @width = 1024
@@ -64,6 +69,8 @@ class Turtle
     @y = new_y
   end
 
+  # An open circle to the left of the turtle. Use a negative radius to
+  # draw the circle on the right.
   def circle radius
     if @pen_down
       cx = @x + radius * Math.cos(rad(@angle - 90))
@@ -81,6 +88,8 @@ class Turtle
     circle -radius
   end
 
+  # A solid disc sitting to the left of the turtle. Use a negative radius to
+  # draw the disc on the right.
   def disc radius
     if @pen_down
       cx = @x + radius * Math.cos(rad(@angle - 90))
@@ -118,6 +127,8 @@ class Turtle
     @colour = colour
   end
 
+  # This make a sub-drawing ... the turtle state is restored after this block
+  # executes. You can nest these, which means you can draw fractals.
   def drawing
     save_x = @x
     save_y = @y
