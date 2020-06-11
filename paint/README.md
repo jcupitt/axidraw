@@ -24,7 +24,7 @@ Plot layer 1:
 speed.
 
 ```
-axicli -m plot -d 10 -u 90 -s 15 falcon.svg
+axicli -m layers -d 10 -u 90 -l 1 -s 15 falcon.svg
 ```
 
 

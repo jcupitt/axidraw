@@ -1,5 +1,7 @@
 <svg viewBox="300 160 1500 1000" xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="428mm" height="295mm">
 
+  <g inkscape:groupmode="layer" id="layer1" inkscape:label="1 - black">
+
 <polyline points="668,164 675,164 684,168 692,174 698,180 700,183 703,188 706,196 710,204 712,212 717,228 716,229" style="stroke:rgba(0, 0, 0, 0.5); stroke-width:4" fill="none"/>
 <polyline points="691,252 686,244 680,228 679,220 676,215 674,204 670,196 665,188 660,186 651,180 644,176 635,172" style="stroke:rgba(0, 0, 0, 0.5); stroke-width:4" fill="none"/>
 <polyline points="668,186 668,180 667,172" style="stroke:rgba(0, 0, 0, 0.5); stroke-width:4" fill="none"/>
@@ -198,6 +200,11 @@
 <polyline points="1028,491 1028,486 1031,484 1036,486" style="stroke:rgba(0, 0, 0, 0.5); stroke-width:4" fill="none"/>
 <polyline points="1396,522 1436,484 1440,484" style="stroke:rgba(0, 0, 0, 0.5); stroke-width:4" fill="none"/>
 <polyline points="1548,482 1540,490 1532,496 1530,500 1516,509 1514,508 1508,506 1500,503 1492,496 1491,484" style="stroke:rgba(0, 0, 0, 0.5); stroke-width:4" fill="none"/>
+
+  </g>
+
+  <g inkscape:groupmode="layer" id="layer2" inkscape:label="2 - purple">
+
 <polyline points="1570,548 1564,556 1562,564 1568,572 1572,574 1591,580 1601,572 1604,570 1608,564 1610,556 1609,548 1604,540 1596,533 1580,524 1564,522 1556,519 1548,511 1524,496 1523,492 1523,484 1516,475" style="stroke:rgba(0, 0, 0, 0.5); stroke-width:4" fill="none"/>
 <polyline points="1588,496 1580,495 1563,484" style="stroke:rgba(0, 0, 0, 0.5); stroke-width:4" fill="none"/>
 <polyline points="1260,492 1262,492 1270,492 1276,491" style="stroke:rgba(0, 0, 0, 0.5); stroke-width:4" fill="none"/>
@@ -396,6 +403,11 @@
 <polyline points="1100,720 1108,724 1121,732 1132,735 1140,732" style="stroke:rgba(0, 0, 0, 0.5); stroke-width:4" fill="none"/>
 <polyline points="1236,808 1232,812 1220,818 1209,820 1204,824 1199,828 1196,833 1198,836 1204,840 1212,843 1226,844 1236,842 1246,844 1252,844 1259,836 1260,829 1252,815 1240,804 1231,796 1228,794 1222,788 1220,787 1207,780 1190,772 1180,764 1164,759 1156,744 1156,735 1156,732" style="stroke:rgba(0, 0, 0, 0.5); stroke-width:4" fill="none"/>
 <polyline points="1196,731 1200,732 1204,737" style="stroke:rgba(0, 0, 0, 0.5); stroke-width:4" fill="none"/>
+
+  </g>
+
+  <g inkscape:groupmode="layer" id="layer3" inkscape:label="3 - pink">
+
 <polyline points="1238,748 1221,756 1220,756 1214,748 1217,732 1212,725" style="stroke:rgba(0, 0, 0, 0.5); stroke-width:4" fill="none"/>
 <polyline points="1038,820 1029,812 1020,807 1012,799 1010,796 1004,792 1000,788 996,783 988,771 967,756 956,753 947,748 937,740 924,743" style="stroke:rgba(0, 0, 0, 0.5); stroke-width:4" fill="none"/>
 <polyline points="1060,755 1068,750 1075,740" style="stroke:rgba(0, 0, 0, 0.5); stroke-width:4" fill="none"/>
@@ -552,5 +564,7 @@
 <polyline points="1052,431 1044,434 1036,449" style="stroke:rgba(0, 0, 0, 0.5); stroke-width:4" fill="none"/>
 <polyline points="1212,520 1212,515 1220,467 1236,458" style="stroke:rgba(0, 0, 0, 0.5); stroke-width:4" fill="none"/>
 <polyline points="1492,559 1484,569 1468,570" style="stroke:rgba(0, 0, 0, 0.5); stroke-width:4" fill="none"/>
+
+  </g>
 
 </svg>
