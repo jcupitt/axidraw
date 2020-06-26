@@ -1,0 +1,517 @@
+<svg viewBox="0 0 860 860" 
+  xmlns="http://www.w3.org/2000/svg" 
+  xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" 
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="428mm" height="295mm">
+  <g transform="translate(430, 430)">
+    <path class="legend useful" d="M2.510525938252074e-14,-410A410,410,0,0,1,410,0L373,0A373,373,0,0,0,2.2839662804098137e-14,-373Z"/>
+    <path class="legend inspiring" d="M410,0A410,410,0,0,1,2.510525938252074e-14,410L2.2839662804098137e-14,373A373,373,0,0,0,373,0Z"/>
+    <path class="legend beauty" d="M2.510525938252074e-14,410A410,410,0,0,1,-410,5.021051876504148e-14L-373,4.5679325608196273e-14A373,373,0,0,0,2.2839662804098137e-14,373Z"/>
+    <path class="legend funny" d="M-410,5.021051876504148e-14A410,410,0,0,1,-7.531577814756222e-14,-410L-6.85189884122944e-14,-373A373,373,0,0,0,-373,4.5679325608196273e-14Z"/>
+    <defs>
+      <path id="nplegend-useful" d="M 2.397246109330944e-14 -391.5 A 391.5 391.5 0 0 1 391.5 0"/>
+    </defs>
+    <text class="legend label" dy="0.3em">
+      <textPath xlink:href="#nplegend-useful" text-anchor="middle" startOffset="50%">Useful</textPath>
+    </text>
+    <defs>
+      <path id="nplegend-inspiring" d="M 391.5 0 A 391.5 391.5 0 0 1 2.397246109330944e-14 391.5"/>
+    </defs>
+    <text class="legend label" dy="0.3em">
+      <textPath xlink:href="#nplegend-inspiring" text-anchor="middle" startOffset="50%">Inspiring</textPath>
+    </text>
+    <defs>
+      <path id="nplegend-beauty" d="M 2.397246109330944e-14 391.5 A 391.5 391.5 0 0 1 -391.5 4.794492218661888e-14"/>
+    </defs>
+    <text class="legend label" dy="0.3em">
+      <textPath xlink:href="#nplegend-beauty" text-anchor="middle" startOffset="50%">Beautiful</textPath>
+    </text>
+    <defs>
+      <path id="nplegend-funny" d="M -391.5 4.794492218661888e-14 A 391.5 391.5 0 0 1 -7.191738327992831e-14 -391.5"/>
+    </defs>
+    <text class="legend label" dy="0.3em">
+      <textPath xlink:href="#nplegend-funny" text-anchor="middle" startOffset="50%">Funny</textPath>
+    </text>
+    <path class="spoke" d="M 5.02337844188999 -51.00321724195009 L 20.583599469207762 -208.98879260116132" fill="none" stroke="gainsboro"/>
+    <path class="spoke" d="M 14.877089709291194 -49.043192206275705 L 60.95978222343709 -200.9574705037639" fill="none" stroke="gainsboro"/>
+    <path class="spoke" d="M 24.15908276233239 -45.19846479785319 L 98.99331473345954 -185.20346551315453" fill="none" stroke="gainsboro"/>
+    <path class="spoke" d="M 32.51265581338683 -39.61678573484026 L 133.22258967436557 -162.33219520617473" fill="none" stroke="gainsboro"/>
+    <path class="spoke" d="M 39.61678573484027 -32.51265581338683 L 162.33219520617476 -133.22258967436557" fill="none" stroke="gainsboro"/>
+    <path class="spoke" d="M 45.19846479785319 -24.159082762332385 L 185.20346551315453 -98.99331473345953" fill="none" stroke="gainsboro"/>
+    <path class="spoke" d="M 49.043192206275705 -14.877089709291191 L 200.9574705037639 -60.95978222343708" fill="none" stroke="gainsboro"/>
+    <path class="spoke" d="M 51.00321724195009 -5.023378441889987 L 208.98879260116135 -20.58359946920775" fill="none" stroke="gainsboro"/>
+    <path class="spoke" d="M 51.00321724195009 5.023378441889987 L 208.98879260116135 20.58359946920775" fill="none" stroke="gainsboro"/>
+    <path class="spoke" d="M 49.043192206275705 14.877089709291191 L 200.9574705037639 60.95978222343708" fill="none" stroke="gainsboro"/>
+    <path class="spoke" d="M 45.19846479785319 24.159082762332385 L 185.20346551315453 98.99331473345953" fill="none" stroke="gainsboro"/>
+    <path class="spoke" d="M 39.61678573484028 32.51265581338683 L 162.3321952061748 133.22258967436554" fill="none" stroke="gainsboro"/>
+    <path class="spoke" d="M 32.51265581338683 39.61678573484027 L 133.22258967436557 162.33219520617476" fill="none" stroke="gainsboro"/>
+    <path class="spoke" d="M 24.15908276233239 45.19846479785319 L 98.99331473345954 185.20346551315453" fill="none" stroke="gainsboro"/>
+    <path class="spoke" d="M 14.877089709291194 49.043192206275705 L 60.95978222343709 200.9574705037639" fill="none" stroke="gainsboro"/>
+    <path class="spoke" d="M 5.02337844188999 51.00321724195009 L 20.583599469207762 208.98879260116132" fill="none" stroke="gainsboro"/>
+    <path class="spoke" d="M -5.023378441889983 51.00321724195009 L -20.583599469207737 208.98879260116135" fill="none" stroke="gainsboro"/>
+    <path class="spoke" d="M -14.877089709291186 49.043192206275705 L -60.95978222343705 200.9574705037639" fill="none" stroke="gainsboro"/>
+    <path class="spoke" d="M -24.159082762332382 45.1984647978532 L -98.99331473345951 185.20346551315455" fill="none" stroke="gainsboro"/>
+    <path class="spoke" d="M -32.51265581338683 39.61678573484028 L -133.22258967436554 162.3321952061748" fill="none" stroke="gainsboro"/>
+    <path class="spoke" d="M -39.616785734840256 32.51265581338685 L -162.3321952061747 133.22258967436562" fill="none" stroke="gainsboro"/>
+    <path class="spoke" d="M -45.19846479785319 24.15908276233239 L -185.20346551315453 98.99331473345956" fill="none" stroke="gainsboro"/>
+    <path class="spoke" d="M -49.043192206275705 14.877089709291198 L -200.95747050376386 60.9597822234371" fill="none" stroke="gainsboro"/>
+    <path class="spoke" d="M -51.00321724195009 5.02337844188997 L -208.98879260116135 20.583599469207684" fill="none" stroke="gainsboro"/>
+    <path class="spoke" d="M -51.00321724195009 -5.023378441889958 L -208.98879260116135 -20.58359946920763" fill="none" stroke="gainsboro"/>
+    <path class="spoke" d="M -49.043192206275705 -14.877089709291184 L -200.9574705037639 -60.959782223437045" fill="none" stroke="gainsboro"/>
+    <path class="spoke" d="M -45.1984647978532 -24.15908276233238 L -185.20346551315455 -98.9933147334595" fill="none" stroke="gainsboro"/>
+    <path class="spoke" d="M -39.61678573484026 -32.512655813386836 L -162.33219520617473 -133.22258967436557" fill="none" stroke="gainsboro"/>
+    <path class="spoke" d="M -32.51265581338686 -39.616785734840256 L -133.22258967436565 -162.3321952061747" fill="none" stroke="gainsboro"/>
+    <path class="spoke" d="M -24.159082762332392 -45.19846479785319 L -98.99331473345956 -185.20346551315453" fill="none" stroke="gainsboro"/>
+    <path class="spoke" d="M -14.8770897092912 -49.043192206275705 L -60.95978222343711 -200.95747050376386" fill="none" stroke="gainsboro"/>
+    <path class="spoke" d="M -5.023378441889973 -51.00321724195009 L -20.583599469207694 -208.98879260116135" fill="none" stroke="gainsboro"/>
+    <defs>
+      <path class="label-path" id="nplabel-path0" d="M 0 0 L 35.286170518641875 -358.26650160199085"/>
+    </defs>
+    <defs>
+      <path class="label-path" id="nplabel-path1" d="M 0 0 L 104.50248381160644 -344.4985208635952"/>
+    </defs>
+    <defs>
+      <path class="label-path" id="nplabel-path2" d="M 0 0 L 169.70282525735922 -317.4916551654078"/>
+    </defs>
+    <defs>
+      <path class="label-path" id="nplabel-path3" d="M 0 0 L 228.38158229891238 -278.2837632105853"/>
+    </defs>
+    <defs>
+      <path class="label-path" id="nplabel-path4" d="M 0 0 L 278.28376321058533 -228.38158229891238"/>
+    </defs>
+    <defs>
+      <path class="label-path" id="nplabel-path5" d="M 0 0 L 317.4916551654078 -169.7028252573592"/>
+    </defs>
+    <defs>
+      <path class="label-path" id="nplabel-path6" d="M 0 0 L 344.4985208635952 -104.50248381160642"/>
+    </defs>
+    <defs>
+      <path class="label-path" id="nplabel-path7" d="M 0 0 L 358.2665016019909 -35.28617051864186"/>
+    </defs>
+    <defs>
+      <path class="label-path" id="nplabel-path8" d="M 0 0 L 358.2665016019909 35.28617051864186"/>
+    </defs>
+    <defs>
+      <path class="label-path" id="nplabel-path9" d="M 0 0 L 344.4985208635952 104.50248381160642"/>
+    </defs>
+    <defs>
+      <path class="label-path" id="nplabel-path10" d="M 0 0 L 317.4916551654078 169.7028252573592"/>
+    </defs>
+    <defs>
+      <path class="label-path" id="nplabel-path11" d="M 0 0 L 278.28376321058533 228.38158229891235"/>
+    </defs>
+    <defs>
+      <path class="label-path" id="nplabel-path12" d="M 0 0 L 228.38158229891238 278.28376321058533"/>
+    </defs>
+    <defs>
+      <path class="label-path" id="nplabel-path13" d="M 0 0 L 169.70282525735922 317.4916551654078"/>
+    </defs>
+    <defs>
+      <path class="label-path" id="nplabel-path14" d="M 0 0 L 104.50248381160644 344.4985208635952"/>
+    </defs>
+    <defs>
+      <path class="label-path" id="nplabel-path15" d="M 0 0 L 35.286170518641875 358.26650160199085"/>
+    </defs>
+    <defs>
+      <path class="label-path" id="nplabel-path16" d="M -35.28617051864183 358.2665016019909 L 0 0"/>
+    </defs>
+    <defs>
+      <path class="label-path" id="nplabel-path17" d="M -104.50248381160638 344.4985208635952 L 0 0"/>
+    </defs>
+    <defs>
+      <path class="label-path" id="nplabel-path18" d="M -169.70282525735917 317.4916551654078 L 0 0"/>
+    </defs>
+    <defs>
+      <path class="label-path" id="nplabel-path19" d="M -228.38158229891235 278.28376321058533 L 0 0"/>
+    </defs>
+    <defs>
+      <path class="label-path" id="nplabel-path20" d="M -278.2837632105852 228.3815822989125 L 0 0"/>
+    </defs>
+    <defs>
+      <path class="label-path" id="nplabel-path21" d="M -317.4916551654078 169.70282525735922 L 0 0"/>
+    </defs>
+    <defs>
+      <path class="label-path" id="nplabel-path22" d="M -344.49852086359516 104.50248381160645 L 0 0"/>
+    </defs>
+    <defs>
+      <path class="label-path" id="nplabel-path23" d="M -358.2665016019909 35.28617051864174 L 0 0"/>
+    </defs>
+    <defs>
+      <path class="label-path" id="nplabel-path24" d="M -358.2665016019909 -35.286170518641654 L 0 0"/>
+    </defs>
+    <defs>
+      <path class="label-path" id="nplabel-path25" d="M -344.4985208635952 -104.50248381160635 L 0 0"/>
+    </defs>
+    <defs>
+      <path class="label-path" id="nplabel-path26" d="M -317.4916551654078 -169.70282525735914 L 0 0"/>
+    </defs>
+    <defs>
+      <path class="label-path" id="nplabel-path27" d="M -278.2837632105853 -228.3815822989124 L 0 0"/>
+    </defs>
+    <defs>
+      <path class="label-path" id="nplabel-path28" d="M -228.38158229891255 -278.2837632105852 L 0 0"/>
+    </defs>
+    <defs>
+      <path class="label-path" id="nplabel-path29" d="M -169.70282525735925 -317.4916551654078 L 0 0"/>
+    </defs>
+    <defs>
+      <path class="label-path" id="nplabel-path30" d="M -104.50248381160648 -344.49852086359516 L 0 0"/>
+    </defs>
+    <defs>
+      <path class="label-path" id="nplabel-path31" d="M -35.28617051864176 -358.2665016019909 L 0 0"/>
+    </defs>
+    <text class="label">
+      <textPath xlink:href="#nplabel-path0" text-anchor="end" startOffset="100%" alignment-baseline="central">Consumer reviews</textPath>
+    </text>
+    <text class="label">
+      <textPath xlink:href="#nplabel-path1" text-anchor="end" startOffset="100%" alignment-baseline="central">Handy tips</textPath>
+    </text>
+    <text class="label">
+      <textPath xlink:href="#nplabel-path2" text-anchor="end" startOffset="100%" alignment-baseline="central">Trivia</textPath>
+    </text>
+    <text class="label">
+      <textPath xlink:href="#nplabel-path3" text-anchor="end" startOffset="100%" alignment-baseline="central">Hotlists</textPath>
+    </text>
+    <text class="label">
+      <textPath xlink:href="#nplabel-path4" text-anchor="end" startOffset="100%" alignment-baseline="central">Authoritative opinion</textPath>
+    </text>
+    <text class="label">
+      <textPath xlink:href="#nplabel-path5" text-anchor="end" startOffset="100%" alignment-baseline="central">Search/Answer</textPath>
+    </text>
+    <text class="label">
+      <textPath xlink:href="#nplabel-path6" text-anchor="end" startOffset="100%" alignment-baseline="central">News analysis</textPath>
+    </text>
+    <text class="label">
+      <textPath xlink:href="#nplabel-path7" text-anchor="end" startOffset="100%" alignment-baseline="central">News updates</textPath>
+    </text>
+    <text class="label">
+      <textPath xlink:href="#nplabel-path8" text-anchor="end" startOffset="100%" alignment-baseline="central">Wonder</textPath>
+    </text>
+    <text class="label">
+      <textPath xlink:href="#nplabel-path9" text-anchor="end" startOffset="100%" alignment-baseline="central">Heartwarming</textPath>
+    </text>
+    <text class="label">
+      <textPath xlink:href="#nplabel-path10" text-anchor="end" startOffset="100%" alignment-baseline="central">Spiritual</textPath>
+    </text>
+    <text class="label">
+      <textPath xlink:href="#nplabel-path11" text-anchor="end" startOffset="100%" alignment-baseline="central">Big Ideas</textPath>
+    </text>
+    <text class="label">
+      <textPath xlink:href="#nplabel-path12" text-anchor="end" startOffset="100%" alignment-baseline="central">Enraging</textPath>
+    </text>
+    <text class="label">
+      <textPath xlink:href="#nplabel-path13" text-anchor="end" startOffset="100%" alignment-baseline="central">Social good</textPath>
+    </text>
+    <text class="label">
+      <textPath xlink:href="#nplabel-path14" text-anchor="end" startOffset="100%" alignment-baseline="central">Thrilling</textPath>
+    </text>
+    <text class="label">
+      <textPath xlink:href="#nplabel-path15" text-anchor="end" startOffset="100%" alignment-baseline="central">Life-coaching</textPath>
+    </text>
+    <text class="label">
+      <textPath xlink:href="#nplabel-path16" text-anchor="start" startOffset="0%" alignment-baseline="central">Cute</textPath>
+    </text>
+    <text class="label">
+      <textPath xlink:href="#nplabel-path17" text-anchor="start" startOffset="0%" alignment-baseline="central">Ethereal</textPath>
+    </text>
+    <text class="label">
+      <textPath xlink:href="#nplabel-path18" text-anchor="start" startOffset="0%" alignment-baseline="central">Minimalist</textPath>
+    </text>
+    <text class="label">
+      <textPath xlink:href="#nplabel-path19" text-anchor="start" startOffset="0%" alignment-baseline="central">Extravagant</textPath>
+    </text>
+    <text class="label">
+      <textPath xlink:href="#nplabel-path20" text-anchor="start" startOffset="0%" alignment-baseline="central">Stylised/Abstract</textPath>
+    </text>
+    <text class="label">
+      <textPath xlink:href="#nplabel-path21" text-anchor="start" startOffset="0%" alignment-baseline="central">Spontaneous</textPath>
+    </text>
+    <text class="label">
+      <textPath xlink:href="#nplabel-path22" text-anchor="start" startOffset="0%" alignment-baseline="central">Pop</textPath>
+    </text>
+    <text class="label">
+      <textPath xlink:href="#nplabel-path23" text-anchor="start" startOffset="0%" alignment-baseline="central">Sensual</textPath>
+    </text>
+    <text class="label">
+      <textPath xlink:href="#nplabel-path24" text-anchor="start" startOffset="0%" alignment-baseline="central">Parody</textPath>
+    </text>
+    <text class="label">
+      <textPath xlink:href="#nplabel-path25" text-anchor="start" startOffset="0%" alignment-baseline="central">Surreal</textPath>
+    </text>
+    <text class="label">
+      <textPath xlink:href="#nplabel-path26" text-anchor="start" startOffset="0%" alignment-baseline="central">Dark</textPath>
+    </text>
+    <text class="label">
+      <textPath xlink:href="#nplabel-path27" text-anchor="start" startOffset="0%" alignment-baseline="central">Outrageous</textPath>
+    </text>
+    <text class="label">
+      <textPath xlink:href="#nplabel-path28" text-anchor="start" startOffset="0%" alignment-baseline="central">Satire</textPath>
+    </text>
+    <text class="label">
+      <textPath xlink:href="#nplabel-path29" text-anchor="start" startOffset="0%" alignment-baseline="central">Slapstick</textPath>
+    </text>
+    <text class="label">
+      <textPath xlink:href="#nplabel-path30" text-anchor="start" startOffset="0%" alignment-baseline="central">Deadpan</textPath>
+    </text>
+    <text class="label">
+      <textPath xlink:href="#nplabel-path31" text-anchor="start" startOffset="0%" alignment-baseline="central">Self-Deprecating</textPath>
+    </text>
+    <g class="wedgeGroup useful" id="Consumer reviews" transform="scale(1,1)">
+      <path class="wedge useful-0" d="M6.276314845630185e-15,-102.5A102.5,102.5,0,0,1,19.996758006653153,-100.53049124133112L19.117006185467844,-96.10768016741658A97.99054093461089,97.99054093461089,0,0,0,6.000190115114446e-15,-97.99054093461089Z">
+        <title>Series 1 - Consumer reviews - 0.9773542343256245</title>
+      </path>
+      <path class="wedge useful-1" d="M6.599676469037474e-15,-107.78089606950226A107.78089606950226,107.78089606950226,0,0,1,21.027009721386058,-105.70991637363821L20.6368290773538,-103.74834581283176A105.78089606950226,105.78089606950226,0,0,0,6.477211789122739e-15,-105.78089606950226Z">
+        <title>Series 2 - Consumer reviews - 1.0224405213790249</title>
+      </path>
+    </g>
+    <g class="wedgeGroup useful" id="Handy tips" transform="scale(1,1)">
+      <path class="wedge useful-0" d="M24.97143606904057,-125.53988672498348A127.99935850726699,127.99935850726699,0,0,1,48.98323385409059,-118.25598749943842L39.22505181742171,-94.69765208240689A102.5,102.5,0,0,0,19.996758006653153,-100.53049124133112Z">
+        <title>Series 1 - Handy tips - 1.1472202831214968</title>
+      </path>
+      <path class="wedge useful-1" d="M13.54407951814489,-68.09068584606261A69.42466124498573,69.42466124498573,0,0,1,26.56766765601477,-64.14002357577186L25.80230079128459,-62.292264510749284A67.42466124498573,67.42466124498573,0,0,0,13.153898874112635,-66.12911528525615Z">
+        <title>Series 2 - Handy tips - 0.8541140114966919</title>
+      </path>
+    </g>
+    <g class="wedgeGroup useful" id="Trivia" transform="scale(1,1)">
+      <path class="wedge useful-0" d="M40.96990356390256,-98.91009683309134A107.0595173423035,107.0595173423035,0,0,1,59.4790809968297,-89.0167353779027L56.945948884509235,-85.2256352610109A102.5,102.5,0,0,0,39.22505181742171,-94.69765208240689Z">
+        <title>Series 1 - Trivia - 1.0239328783886028</title>
+      </path>
+      <path class="wedge useful-1" d="M37.79851681514954,-91.2536919327215A98.7722843958627,98.7722843958627,0,0,1,54.87494105768786,-82.12615301286469L53.76380059164866,-80.46321378825961A96.7722843958627,96.7722843958627,0,0,0,37.033149950419364,-89.40593286769892Z">
+        <title>Series 2 - Trivia - 0.9762840313343676</title>
+      </path>
+    </g>
+    <g class="wedgeGroup useful" id="Hotlists" transform="scale(1,1)">
+      <path class="wedge useful-0" d="M59.094620310222716,-88.44134929880835A106.36750638894951,106.36750638894951,0,0,1,75.21318506552961,-75.21318506552961L72.47844507162112,-72.47844507162111A102.5,102.5,0,0,0,56.945948884509235,-85.2256352610109Z">
+        <title>Series 1 - Hotlists - 1.020233480457202</title>
+      </path>
+      <path class="wedge useful-1" d="M55.28917789388134,-82.74610224902017A99.51789100250545,99.51789100250545,0,0,1,70.36977557725531,-70.3697755772553L68.95556201488222,-68.9555620148822A97.51789100250545,97.51789100250545,0,0,0,54.17803742784213,-81.08316302441507Z">
+        <title>Series 2 - Hotlists - 0.9799499006877246</title>
+      </path>
+    </g>
+    <g class="wedgeGroup useful" id="Authoritative opinion" transform="scale(1,1)">
+      <path class="wedge useful-0" d="M72.47844507162112,-72.47844507162111A102.5,102.5,0,0,1,85.2256352610109,-56.94594888450922L76.57036845446126,-51.16268449888078A92.09039912164553,92.09039912164553,0,0,0,65.11774570109124,-65.11774570109122Z">
+        <title>Series 1 - Authoritative opinion - 0.9492630729924912</title>
+      </path>
+      <path class="wedge useful-1" d="M79.80672684680151,-79.8067268468015A112.86375547535168,112.86375547535168,0,0,1,93.84278300809993,-62.70374292890853L92.17984378349483,-61.59260246286933A110.86375547535168,110.86375547535168,0,0,0,78.39251328442842,-78.3925132844284Z">
+        <title>Series 2 - Authoritative opinion - 1.0502770854203143</title>
+      </path>
+    </g>
+    <g class="wedgeGroup useful" id="Search/Answer" transform="scale(1,1)">
+      <path class="wedge useful-0" d="M86.17472348775823,-57.5801093631225A103.64145870480952,103.64145870480952,0,0,1,95.75222241698725,-39.66186915248122L94.69765208240689,-39.2250518174217A102.5,102.5,0,0,0,85.2256352610109,-56.94594888450922Z">
+        <title>Series 1 - Search/Answer - 1.0058937840874351</title>
+      </path>
+      <path class="wedge useful-1" d="M85.10607551003656,-56.866061612953224A102.35620671013672,102.35620671013672,0,0,1,94.56480440498974,-39.170024507705755L92.71704533996717,-38.40465764297557A100.35620671013672,100.35620671013672,0,0,0,83.44313628543146,-55.75492114691402Z">
+        <title>Series 2 - Search/Answer - 0.9941596327666605</title>
+      </path>
+    </g>
+    <g class="wedgeGroup useful" id="News analysis" transform="scale(1,1)">
+      <path class="wedge useful-0" d="M94.69765208240689,-39.2250518174217A102.5,102.5,0,0,1,100.53049124133112,-19.996758006653145L74.7761843240205,-14.87390784750859A76.24113638132677,76.24113638132677,0,0,0,70.43762543810944,-29.17621975782105Z">
+        <title>Series 1 - News analysis - 0.882437418246434</title>
+      </path>
+      <path class="wedge useful-1" d="M114.66710994456983,-47.496672097167625A124.11478543407279,124.11478543407279,0,0,1,121.72995463414385,-24.213593457295925L119.7683840733374,-23.823412813263666A122.11478543407279,122.11478543407279,0,0,0,112.81935087954726,-46.73130523243744Z">
+        <title>Series 2 - News analysis - 1.1164970823752223</title>
+      </path>
+    </g>
+    <g class="wedgeGroup useful" id="News updates" transform="scale(1,1)">
+      <path class="wedge useful-0" d="M100.53049124133112,-19.996758006653145A102.5,102.5,0,0,1,102.5,0L93.17598148202788,0A93.17598148202788,93.17598148202788,0,0,0,91.38563112469691,-18.17773223149762Z">
+        <title>Series 1 - News updates - 0.9543007238833827</title>
+      </path>
+      <path class="wedge useful-1" d="M109.81790824985005,-21.844140110659747A111.96936826447946,111.96936826447946,0,0,1,111.96936826447946,0L109.96936826447946,0A109.96936826447946,109.96936826447946,0,0,0,107.8563376890436,-21.45395946662749Z">
+        <title>Series 2 - News updates - 1.0452850920321277</title>
+      </path>
+    </g>
+    <g class="wedgeGroup inspiring" id="Wonder" transform="scale(1,1)">
+      <path class="wedge inspiring-0" d="M108.61613799918901,0A108.61613799918901,108.61613799918901,0,0,1,106.52910936385057,21.189957338410007L100.53049124133112,19.996758006653145A102.5,102.5,0,0,0,102.5,0Z">
+        <title>Series 1 - Wonder - 1.032342037856135</title>
+      </path>
+      <path class="wedge inspiring-1" d="M97.05590652228261,0A97.05590652228261,97.05590652228261,0,0,1,95.19100449324667,18.934668056999357L93.22943393244022,18.5444874129671A95.05590652228261,95.05590652228261,0,0,0,95.05590652228261,0Z">
+        <title>Series 2 - Wonder - 0.9679510862035128</title>
+      </path>
+    </g>
+    <g class="wedgeGroup inspiring" id="Heartwarming" transform="scale(1,1)">
+      <path class="wedge inspiring-0" d="M132.9091123037677,26.437266174671265A135.51295575023798,135.51295575023798,0,0,1,125.19764620775256,51.8585630364396L94.69765208240689,39.2250518174217A102.5,102.5,0,0,0,100.53049124133112,19.996758006653145Z">
+        <title>Series 1 - Heartwarming - 1.196812954097898</title>
+      </path>
+      <path class="wedge inspiring-1" d="M52.131849484832145,10.369669596907965A53.15317279578173,53.15317279578173,0,0,1,49.10712843405847,20.340838606584466L47.259369369035895,19.575471741854287A51.15317279578173,51.15317279578173,0,0,0,50.17027892402568,9.979488952875709Z">
+        <title>Series 2 - Heartwarming - 0.8049708114259474</title>
+      </path>
+    </g>
+    <g class="wedgeGroup inspiring" id="Spiritual" transform="scale(1,1)">
+      <path class="wedge inspiring-0" d="M103.8079122251719,42.99864512530202A112.36087452116352,112.36087452116352,0,0,1,93.42465277608679,62.42435724000909L85.2256352610109,56.945948884509214A102.5,102.5,0,0,0,94.69765208240689,39.2250518174217Z">
+        <title>Series 1 - Spiritual - 1.0530690659860522</title>
+      </path>
+      <path class="wedge inspiring-1" d="M85.63278286436018,35.47026004616836A92.68825626171562,92.68825626171562,0,0,1,77.06746849892765,51.49483612950194L75.40452927432257,50.38369566346273A90.68825626171562,90.68825626171562,0,0,0,83.78502379933761,34.70489318143818Z">
+        <title>Series 2 - Spiritual - 0.9474119123657981</title>
+      </path>
+    </g>
+    <g class="wedgeGroup inspiring" id="Big Ideas" transform="scale(1,1)">
+      <path class="wedge inspiring-0" d="M85.2256352610109,56.945948884509214A102.5,102.5,0,0,1,72.47844507162112,72.47844507162111L61.37012955946602,61.37012955946601A86.79046954759082,86.79046954759082,0,0,0,72.1636380662912,48.21820139043571Z">
+        <title>Series 1 - Big Ideas - 0.9255164057557541</title>
+      </path>
+      <path class="wedge inspiring-1" d="M97.27106081938996,64.99444492726523A116.98691014097592,116.98691014097592,0,0,1,82.72223747074537,82.72223747074536L81.30802390837226,81.30802390837226A114.98691014097592,114.98691014097592,0,0,0,95.60812159478488,63.88330446122604Z">
+        <title>Series 2 - Big Ideas - 1.0738085306127512</title>
+      </path>
+    </g>
+    <g class="wedgeGroup inspiring" id="Enraging" transform="scale(1,1)">
+      <path class="wedge inspiring-0" d="M72.58218961733135,72.58218961733134A102.64671694356564,102.64671694356564,0,0,1,57.027460451033896,85.34762594119563L56.945948884509214,85.2256352610109A102.5,102.5,0,0,0,72.47844507162112,72.47844507162111Z">
+        <title>Series 1 - Enraging - 1.000753899603431</title>
+      </path>
+      <path class="wedge inspiring-1" d="M73.08260087624919,73.08260087624919A103.35440533269144,103.35440533269144,0,0,1,57.420631054285785,85.93604733173308L56.30949058824658,84.27310810712798A101.35440533269144,101.35440533269144,0,0,0,71.6683873138761,71.66838731387608Z">
+        <title>Series 2 - Enraging - 0.999252933179095</title>
+      </path>
+    </g>
+    <g class="wedgeGroup inspiring" id="Social good" transform="scale(1,1)">
+      <path class="wedge inspiring-0" d="M62.54019682050348,93.59801895979945A112.56938025744962,112.56938025744962,0,0,1,43.0784368161318,104.00054640733782L39.22505181742171,94.69765208240689A102.5,102.5,0,0,0,56.945948884509214,85.2256352610109Z">
+        <title>Series 1 - Social good - 1.0542437865066856</title>
+      </path>
+      <path class="wedge inspiring-1" d="M51.35383956143576,76.85645222264377A92.43446914410883,92.43446914410883,0,0,1,35.37313992091256,85.39831414078823L34.607773056182374,83.55055507576566A90.43446914410883,90.43446914410883,0,0,0,50.24269909539656,75.19351299803867Z">
+        <title>Series 2 - Social good - 0.9462478386340208</title>
+      </path>
+    </g>
+    <g class="wedgeGroup inspiring" id="Thrilling" transform="scale(1,1)">
+      <path class="wedge inspiring-0" d="M39.22505181742171,94.69765208240689A102.5,102.5,0,0,1,19.996758006653174,100.53049124133112L12.426910387129402,62.47429735432446A63.69824119774656,63.69824119774656,0,0,0,24.376261577173025,58.849501299565276Z">
+        <title>Series 1 - Thrilling - 0.8384724864694899</title>
+      </path>
+      <path class="wedge inspiring-1" d="M50.12650609085515,121.01609083892004A130.9868728339229,130.9868728339229,0,0,1,25.554271201055695,128.46999680156134L25.164090557023435,126.50842624075489A128.9868728339229,128.9868728339229,0,0,0,49.361139226124976,119.16833177389746Z">
+        <title>Series 2 - Thrilling - 1.1600635488685918</title>
+      </path>
+    </g>
+    <g class="wedgeGroup inspiring" id="Life-coaching" transform="scale(1,1)">
+      <path class="wedge inspiring-0" d="M23.17677453204481,116.51751390504529A118.80022695399897,118.80022695399897,0,0,1,7.274415883859698e-15,118.80022695399897L6.276314845630185e-15,102.5A102.5,102.5,0,0,0,19.996758006653174,100.53049124133112Z">
+        <title>Series 1 - Life-coaching - 1.0903533341512675</title>
+      </path>
+      <path class="wedge inspiring-1" d="M16.43769174177373,82.63785685280988A84.25682818040964,84.25682818040964,0,0,1,5.159242746872359e-15,84.25682818040964L5.036778066957623e-15,82.25682818040964A82.25682818040964,82.25682818040964,0,0,0,16.047511097741474,80.67628629200341Z">
+        <title>Series 2 - Life-coaching - 0.9104655609421022</title>
+      </path>
+    </g>
+    <g class="wedgeGroup beauty" id="Cute" transform="scale(1,1)">
+      <path class="wedge beauty-0" d="M8.829264956127114e-15,144.19283931129192A144.19283931129192,144.19283931129192,0,0,1,-28.1306274536598,141.4222143360634L-19.996758006653163,100.53049124133112A102.5,102.5,0,0,0,6.276314845630185e-15,102.5Z">
+        <title>Series 1 - Cute - 1.257624218883548</title>
+      </path>
+      <path class="wedge beauty-1" d="M1.1465202295620168e-15,18.724096292257798A18.724096292257798,18.724096292257798,0,0,1,-3.65288997511757,18.364318032299153L-3.262709331085313,16.40274747149269A16.724096292257798,16.724096292257798,0,0,0,1.0240555496472815e-15,16.724096292257798Z">
+        <title>Series 2 - Cute - 0.7447106944958133</title>
+      </path>
+    </g>
+    <g class="wedgeGroup beauty" id="Ethereal" transform="scale(1,1)">
+      <path class="wedge beauty-0" d="M-23.217277653674646,116.7211368479694A119.00783910621276,119.00783910621276,0,0,1,-45.54232834751785,109.94890675862626L-39.225051817421694,94.69765208240689A102.5,102.5,0,0,0,-19.996758006653163,100.53049124133112Z">
+        <title>Series 1 - Ethereal - 1.0915899876321793</title>
+      </path>
+      <path class="wedge beauty-1" d="M-16.380269583804814,82.34917617032971A83.96249190900733,83.96249190900733,0,0,1,-32.131054593665,77.57122777337638L-31.36568772893482,75.7234687083538A81.96249190900733,81.96249190900733,0,0,0,-15.990088939772559,80.38760560952326Z">
+        <title>Series 2 - Ethereal - 0.9092401155640967</title>
+      </path>
+    </g>
+    <g class="wedgeGroup beauty" id="Minimalist" transform="scale(1,1)">
+      <path class="wedge beauty-0" d="M-48.73550808041208,117.65792457687444A127.35201986459965,127.35201986459965,0,0,1,-70.7529913516926,105.88933458276473L-56.9459488845092,85.2256352610109A102.5,102.5,0,0,0,-39.225051817421694,94.69765208240689Z">
+        <title>Series 1 - Minimalist - 1.1430799201876924</title>
+      </path>
+      <path class="wedge beauty-1" d="M-27.021779728935602,65.23634710105472A70.61131327774895,70.61131327774895,0,0,1,-39.2295437715391,58.71116127522349L-38.118403305499896,57.0482220506184A68.61131327774895,68.61131327774895,0,0,0,-26.256412864205423,63.38858803603214Z">
+        <title>Series 2 - Minimalist - 0.8582168492752537</title>
+      </path>
+    </g>
+    <g class="wedgeGroup beauty" id="Extravagant" transform="scale(1,1)">
+      <path class="wedge beauty-0" d="M-69.01479915522843,103.28794612491625A124.2233565684816,124.2233565684816,0,0,1,-87.83917781132779,87.8391778113278L-72.47844507162111,72.47844507162112A102.5,102.5,0,0,0,-56.9459488845092,85.2256352610109Z">
+        <title>Series 1 - Extravagant - 1.1233649724071542</title>
+      </path>
+      <path class="wedge beauty-1" d="M-42.22591527223904,63.19554813025767A76.00463949037601,76.00463949037601,0,0,1,-53.74339598528373,53.74339598528374L-52.329182422910634,52.32918242291065A74.00463949037601,74.00463949037601,0,0,0,-41.11477480619983,61.53260890565257Z">
+        <title>Series 2 - Extravagant - 0.8777531155034602</title>
+      </path>
+    </g>
+    <g class="wedgeGroup beauty" id="Stylised/Abstract" transform="scale(1,1)">
+      <path class="wedge beauty-0" d="M-82.78908698617691,82.78908698617693A117.08144963233731,117.08144963233731,0,0,1,-97.3496675336195,65.04696825451046L-85.2256352610109,56.94594888450922A102.5,102.5,0,0,0,-72.47844507162111,72.47844507162112Z">
+        <title>Series 1 - Stylised/Abstract - 1.0801982741603566</title>
+      </path>
+      <path class="wedge beauty-1" d="M-61.260607992491465,61.26060799249148A86.63558266220306,86.63558266220306,0,0,1,-72.0348543277471,48.13215084742916L-70.37191510314202,47.02101038138996A84.63558266220306,84.63558266220306,0,0,0,-59.84639443011837,59.84639443011838Z">
+        <title>Series 2 - Stylised/Abstract - 0.9205285830588312</title>
+      </path>
+    </g>
+    <g class="wedgeGroup beauty" id="Spontaneous" transform="scale(1,1)">
+      <path class="wedge beauty-0" d="M-90.25760061559056,60.308200641189366A108.55189327442154,108.55189327442154,0,0,1,-100.28887241158765,41.541011107984595L-94.69765208240686,39.22505181742175A102.5,102.5,0,0,0,-85.2256352610109,56.94594888450922Z">
+        <title>Series 1 - Spontaneous - 1.0319925741810678</title>
+      </path>
+      <path class="wedge beauty-1" d="M-80.75885181739642,53.961339607274425A97.12784523027264,97.12784523027264,0,0,1,-89.73442824517288,37.169217190946L-87.8866691801503,36.40385032621582A95.12784523027264,95.12784523027264,0,0,0,-79.09591259279134,52.85019914123522Z">
+        <title>Series 2 - Spontaneous - 0.9682973826009643</title>
+      </path>
+    </g>
+    <g class="wedgeGroup beauty" id="Pop" transform="scale(1,1)">
+      <path class="wedge beauty-0" d="M-112.01210335435196,46.39693235930951A121.2410270090961,121.2410270090961,0,0,1,-118.91141467149195,23.652951000770706L-100.53049124133112,19.99675800665318A102.5,102.5,0,0,0,-94.69765208240686,39.22505181742175Z">
+        <title>Series 1 - Pop - 1.1050286265749176</title>
+      </path>
+      <path class="wedge beauty-1" d="M-74.5514375607604,30.88021653207798A80.6938945363525,80.6938945363525,0,0,1,-79.14338397966519,15.742597869832531L-77.18181341885874,15.352417225800274A78.6938945363525,78.6938945363525,0,0,0,-72.70367849573783,30.1148496673478Z">
+        <title>Series 2 - Pop - 0.895923274401109</title>
+      </path>
+    </g>
+    <g class="wedgeGroup beauty" id="Sensual" transform="scale(1,1)">
+      <path class="wedge beauty-0" d="M-100.53049124133112,19.99675800665318A102.5,102.5,0,0,1,-102.5,1.255262969126037e-14L-74.47322456732242,9.120339608855343e-15A74.47322456732242,74.47322456732242,0,0,0,-73.04224243979407,14.52900536241839Z">
+        <title>Series 1 - Sensual - 0.8757634535196427</title>
+      </path>
+      <path class="wedge beauty-1" d="M-122.77712131643192,24.42188786111099A125.18246732450403,125.18246732450403,0,0,1,-125.18246732450403,1.5330430791832198e-14L-123.18246732450403,1.5085501432002728e-14A123.18246732450403,123.18246732450403,0,0,0,-120.81555075562545,24.031707217078733Z">
+        <title>Series 2 - Sensual - 1.1231105592736532</title>
+      </path>
+    </g>
+    <g class="wedgeGroup funny" id="Parody" transform="scale(1,1)">
+      <path class="wedge funny-0" d="M-102.5,1.255262969126037e-14A102.5,102.5,0,0,1,-100.53049124133112,-19.996758006653156L-90.82289717420441,-18.06579748920026A92.60222292168208,92.60222292168208,0,0,0,-92.60222292168208,1.1340501589496762e-14Z">
+        <title>Series 1 - Parody - 0.9516308385368835</title>
+      </path>
+      <path class="wedge funny-1" d="M-112.44427513062048,1.377045216211587e-14A112.44427513062048,112.44427513062048,0,0,1,-110.2836899137236,-21.936789844102883L-108.32211935291714,-21.546609200070627A110.44427513062048,110.44427513062048,0,0,0,-110.44427513062048,1.35255228022864e-14Z">
+        <title>Series 2 - Parody - 1.0479307795332211</title>
+      </path>
+    </g>
+    <g class="wedgeGroup funny" id="Surreal" transform="scale(1,1)">
+      <path class="wedge funny-0" d="M-100.53049124133112,-19.996758006653156A102.5,102.5,0,0,1,-94.69765208240688,-39.22505181742173L-86.16857887993531,-35.692194022485076A93.2681976899219,93.2681976899219,0,0,0,-91.47607542401398,-18.195722721190783Z">
+        <title>Series 1 - Surreal - 0.9547313741902089</title>
+      </path>
+      <path class="wedge funny-1" d="M-109.74259122650946,-21.829158623243096A111.89257569341882,111.89257569341882,0,0,1,-103.37526052311954,-42.81943492252816L-101.52750145809696,-42.054068057797984A109.89257569341882,109.89257569341882,0,0,0,-107.781020665703,-21.438977979210836Z">
+        <title>Series 2 - Surreal - 1.0448583448178246</title>
+      </path>
+    </g>
+    <g class="wedgeGroup funny" id="Dark" transform="scale(1,1)">
+      <path class="wedge funny-0" d="M-94.69765208240688,-39.22505181742173A102.5,102.5,0,0,1,-85.22563526101091,-56.9459488845092L-65.87346136850788,-44.01523969223912A79.22533835733087,79.22533835733087,0,0,0,-73.19466856461935,-30.318224412869004Z">
+        <title>Series 1 - Dark - 0.8940581543024781</title>
+      </path>
+      <path class="wedge funny-1" d="M-112.9288396350667,-46.77665695990099A122.23329520906677,122.23329520906677,0,0,1,-101.63327057794534,-67.90918030205502L-99.97033135334024,-66.79803983601582A120.23329520906677,120.23329520906677,0,0,0,-111.08108057004412,-46.01129009517081Z">
+        <title>Series 2 - Dark - 1.1049816679858162</title>
+      </path>
+    </g>
+    <g class="wedgeGroup funny" id="Outrageous" transform="scale(1,1)">
+      <path class="wedge funny-0" d="M-85.22563526101091,-56.9459488845092A102.5,102.5,0,0,1,-72.47844507162114,-72.47844507162111L-71.75458221420072,-71.75458221420071A101.47630332973792,101.47630332973792,0,0,0,-84.37446258747269,-56.3772134868703Z">
+        <title>Series 1 - Outrageous - 0.9947697833362091</title>
+      </path>
+      <path class="wedge funny-1" d="M-86.8922592470518,-58.059551429425625A104.50443162489798,104.50443162489798,0,0,1,-73.89579226601127,-73.89579226601124L-72.48157870363818,-72.48157870363815A102.50443162489798,102.50443162489798,0,0,0,-85.2293200224467,-56.94841096338642Z">
+        <title>Series 2 - Outrageous - 1.005182813888805</title>
+      </path>
+    </g>
+    <g class="wedgeGroup funny" id="Satire" transform="scale(1,1)">
+      <path class="wedge funny-0" d="M-72.47844507162114,-72.47844507162111A102.5,102.5,0,0,1,-56.94594888450922,-85.2256352610109L-47.52744692511092,-71.12985095289919A85.54714435795557,85.54714435795557,0,0,0,-60.4909658866549,-60.49096588665488Z">
+        <title>Series 1 - Satire - 0.9201493824553277</title>
+      </path>
+      <path class="wedge funny-1" d="M-83.3669308253522,-83.36693082535217A117.8986442266327,117.8986442266327,0,0,1,-65.5009772456855,-98.029140006114L-64.3898367796463,-96.36620078150891A115.8986442266327,115.8986442266327,0,0,0,-81.9527172629791,-81.95271726297908Z">
+        <title>Series 2 - Satire - 1.079126911225144</title>
+      </path>
+    </g>
+    <g class="wedgeGroup funny" id="Slapstick" transform="scale(1,1)">
+      <path class="wedge funny-0" d="M-56.94594888450922,-85.2256352610109A102.5,102.5,0,0,1,-39.22505181742176,-94.69765208240686L-36.231567911129154,-87.47074263708969A94.67764958416925,94.67764958416925,0,0,0,-52.60008384122515,-78.72158859346544Z">
+        <title>Series 1 - Slapstick - 0.9613665382330754</title>
+      </path>
+      <path class="wedge funny-1" d="M-61.50307719858807,-92.04585975706736A110.7026142569054,110.7026142569054,0,0,1,-42.36405639562115,-102.27587950744704L-41.598689530890965,-100.42812044242447A108.7026142569054,108.7026142569054,0,0,0,-60.391936732548864,-90.38292053246226Z">
+        <title>Series 2 - Slapstick - 1.038283316942907</title>
+      </path>
+    </g>
+    <g class="wedgeGroup funny" id="Deadpan" transform="scale(1,1)">
+      <path class="wedge funny-0" d="M-39.22505181742176,-94.69765208240686A102.5,102.5,0,0,1,-19.996758006653188,-100.5304912413311L-18.9304999165329,-95.1700498360707A97.03454133910272,97.03454133910272,0,0,0,-37.13351133762008,-89.64822668981732Z">
+        <title>Series 1 - Deadpan - 0.972684234644542</title>
+      </path>
+      <path class="wedge funny-1" d="M-41.575695591900654,-100.3726081630617A108.64252819870268,108.64252819870268,0,0,1,-21.195105810931246,-106.55499248308047L-20.804925166898986,-104.593421922274A106.64252819870268,106.64252819870268,0,0,0,-40.81032872717048,-98.52484909803913Z">
+        <title>Series 2 - Deadpan - 1.0270681956732146</title>
+      </path>
+    </g>
+    <g class="wedgeGroup funny" id="Self-Deprecating" transform="scale(1,1)">
+      <path class="wedge funny-0" d="M-20.762851018065003,-104.38190089224334A106.42686322670829,106.42686322670829,0,0,1,-1.9550297609082218e-14,-106.42686322670829L-1.8828944536890554e-14,-102.5A102.5,102.5,0,0,0,-19.996758006653188,-100.5304912413311Z">
+        <title>Series 1 - Self-Deprecating - 1.0205498535652706</title>
+      </path>
+      <path class="wedge funny-1" d="M-19.402580661049505,-97.54336000645121A99.45434740450855,99.45434740450855,0,0,1,-1.826946723153304e-14,-99.45434740450855L-1.7902073191788836e-14,-97.45434740450855A97.45434740450855,97.45434740450855,0,0,0,-19.012400017017246,-95.58178944564474Z">
+        <title>Series 2 - Self-Deprecating - 0.9796363949490632</title>
+      </path>
+    </g>
+  </g>
+</svg>
+
