@@ -70,7 +70,11 @@ class Turtle
   end
 
   def rad(angle)
-    2 * Math::PI * angle / 360.0
+    2.0 * Math::PI * angle / 360.0
+  end
+
+  def deg(angle)
+    360.0 * angle / (2.0 * Math::PI)
   end
 
   def forward(distance)
@@ -145,7 +149,7 @@ class Turtle
   end
 
   def left(angle)
-    @angle += angle
+    @angle -= angle
   end
 
   # about face
@@ -154,7 +158,7 @@ class Turtle
   end
 
   def right(angle)
-    @angle -= angle
+    @angle += angle
   end
 
   def pen_up

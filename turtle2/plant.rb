@@ -8,58 +8,95 @@ $colours = %w(green blue purple pink red yellow)
 $centre_circle_radius = 33
 
 Turtle.new "drawing.svg" do 
-  # size is the petal length
-  # angle is the arc radius we want the petal to fit within, so 36 for a petal
-  # that fills 1/10th of a circle
-  def petal radius, angle
-    n_petals = 360.0 / angle
-    tip_length = 0.98 * 2.0 * radius * Math::PI / n_petals
-    step = angle / 6.0
-    small = tip_length / 6.0
-    ssmall = small / 2
+  def petal_sides r, a
+    ha = a / 2.0
+    w = 2.0 * r * Math.sin(rad(ha))
 
     drawing do 
-      forward 0.1 * radius
+      left ha
+      forward 0.1 * r
+
       pen_down
-      curve 0.9 * radius, 90 + step, small
-      curve small, 90 + step, small
-      turn
-      curve ssmall, 90 + step, small
-      curve small, 90 + step, ssmall
-      turn 
-      curve small, 90 + step, small
-      curve small, 90 + step, 0.9 * radius
+      curve 0.9 * r, 90.0 + ha, 0.2 * w
+
+      pen_up
+      forward 0.6 * w
+
+      pen_down
+      curve 0.2 * w, 90 + ha, 0.9 * r
     end
   end
 
-  def flower radius
+  def petal_tip r, a, x1
+    ha = a / 2.0
+    w = 2.0 * r * Math.sin(rad(ha))
+    adj = r * Math.cos(rad(ha))
+    ma = deg(Math.atan(0.3 * w / adj))
+    mr = adj / Math.cos(rad(ma))
+    tl = 0.2 * mr * x1
+    tw = 2.0 * (mr + tl) * Math.sin(rad(ma))
+
+    drawing do 
+      left ma
+      forward mr
+      pen_down
+      curve tl, 90 + ma, tw / 2.0
+      curve tw / 2.0,  90 + ma, tl
+    end
+  end
+
+  def petal r, a, x1, x2, c1, c2, c3
+    tip_length = 1 + 10 * x1
+    liner_length = 1 + 10 * x2
+    stripe_length = r * (0.3 + x1 * 0.3)
+
+    if r < 5
+      tip_length = 1
+    end
+
+    colour c1
+    petal_sides r, a
+    (0 ... tip_length).each do |i|
+      petal_tip r - i, a, x1
+    end
+
+    if r > 15
+      colour c2
+      (0 ... liner_length).each do |i|
+        petal_tip r - tip_length - i, a, x1
+      end
+    end
+
+    drawing do
+      forward r * 0.2
+      colour c3
+      pen_down
+      forward stripe_length
+    end
+  end
+
+  def flower r
     our_colours = $colours.shuffle[0 .. 3]
+    c1 = our_colours[0]
+    c2 = our_colours[1]
+    c3 = our_colours[2]
+    c4 = our_colours[3]
+    x1 = Random.rand
+    x2 = Random.rand
     n_petals = 5 + Random.rand(10)
     angle = 360.0 / n_petals
 
     drawing do
       n_petals.times do 
         left angle
-        if radius > 15
-          colour our_colours[0]
-          petal radius, angle
-          petal radius - 2, angle
-          petal radius - 4, angle
-          colour our_colours[1]
-          petal radius - 6, angle
-          colour our_colours[2]
-          petal radius - 8, angle
-        else
-          colour our_colours[0]
-          petal radius, angle
-        end
+        petal r, angle, x1, x2, c1, c2, c3
       end
 
-      forward radius / 10.0
-      left 270
-      colour our_colours[3]
+      forward r / 10.0
+      right 270
+      colour c4
       pen_down
-      disc radius / 10.0
+      disc r / 10.0
     end
   end
 
@@ -71,8 +108,7 @@ Turtle.new "drawing.svg" do
       i = 0
       face = handedness
 
-      # while size > 0.5 do
-      while size > 10 do
+      while size > 0.5 do
         left 5 * handedness
 
         if i % 4 == 1
@@ -116,4 +152,5 @@ Turtle.new "drawing.svg" do
     end
     turn
   end
+
 end
